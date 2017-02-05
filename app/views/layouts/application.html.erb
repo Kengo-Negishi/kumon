@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>公文 松戸東口教室</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+  <div class="top-space">
+  </div>
+  <div class="bar">
+
+    <% if user_signed_in? %>
+      <ul class="right-bar">
+      <li class="menu">
+<%= link_to "トップページ", destroy_user_session_path, method: :delete %>
+      </li>
+      <li class="menu">
+        <a  href="/access">アクセス</a>
+      </li>
+      <li class="menu">
+        <a  href="/flow">入会までの流れ</a>
+      </li>
+      <li class="menu">
+        <a  href="/about">教室について</a>
+      </li>
+      </ul>
+    <% else %>
+      <ul class="right-bar">
+          <!-- <li class="menu">
+            <a  href="/users/sign_up">新規登録</a>
+          </li> -->
+      <li class="menu">
+        <a  href="/users/sign_in">会員ページ</a>
+      </li>
+      <li class="menu">
+        <a  href="/access">アクセス</a>
+      </li>
+      <li class="menu">
+        <a  href="/flow">入会までの流れ</a>
+      </li>
+      <li class="menu">
+        <a  href="/about">教室について</a>
+      </li>
+      <li class="back">
+        <a  href="/">
+          <img src="/assets/rogo.png" class="rogo">
+        </a>
+      </li>
+
+         <!--  <li class="menu">
+            <a  href="whk_obog/register">問い合わせ</a>
+          </li> -->
+        </ul>
+    <% end %>
+
+  </div>
+  <div class="small-space">
+  </div>
+</header>
+
+<%= yield %>
+
+  <div class="footer">
+    <font size="3" color="white"><center>Copyright(c) 公文　松戸駅東口教室 All Rights Reserved.</font></center>
+  </div>
+
+</body>
+</html>
