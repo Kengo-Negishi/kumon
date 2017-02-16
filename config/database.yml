@@ -47,8 +47,9 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
+
 production:
   <<: *default
-  database: kumon_production
-  username: kumon
-  password: <%= ENV['KUMON_DATABASE_PASSWORD'] %>
+  database: [heroku_43eaa982c5e91fd]
+  username: [b991c067921cc6]
+  password: <%= ENV['b9bf3af5'] %>
