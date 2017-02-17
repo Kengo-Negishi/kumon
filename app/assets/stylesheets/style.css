@@ -166,15 +166,9 @@ width: 100%;
 
 .shikaku{
   float: left;
-  height: 36px;
+  height: 26px;
   width: 3%;
   background-color: #87CEFA;
-}
-
-.text-box{
-  float: left;
-  height: 36px;
-  width: 90%;
 }
 
 .under-bar{
