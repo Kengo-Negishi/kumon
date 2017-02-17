@@ -171,11 +171,16 @@ width: 100%;
   background-color: #87CEFA;
 }
 
+.text-box{
+  float: left;
+  height: 36px;
+  width: 97%;
+}
+
 .under-bar{
   height: 1px;
   width: 80%;
   background-color: #87CEFA;
-  float: left;
 }
 
 ul.limited_event{
