@@ -24,7 +24,7 @@ module Kumon
     config.active_record.raise_in_transactional_callbacks = true
 	
     # for heroku deploy
-    config.assets.initialize_on_precompile = false 
+    config.assets.initialize_on_precompile = true
 
 
   end
