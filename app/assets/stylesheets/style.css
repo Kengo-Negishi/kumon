@@ -232,7 +232,7 @@ li.event::after {
 
 .flows{
   width: 90%;
-  height: auto;
+  /*height: auto;*/
   margin: 0 auto;
 }
 
@@ -242,8 +242,8 @@ li.event::after {
 
 
 .about{
-  width: 90%
-  height: auto;
+  width: 90%;
+  /*height: auto;*/
   margin: 0 auto;
 }
 
